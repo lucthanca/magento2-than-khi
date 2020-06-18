@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ *  DTech.
+ *
+ *  NOTICE OF LICENSE
+ *
+ *  This source file is subject to the EULA
+ *  that is bundled with this package in the file LICENSE.txt.
+ *  It is also available through the world-wide-web at this URL:
+ *  http://dtech.com/Dtech-License.txt
+ *
+ * @category    VADU
+ * @package     Vadu_ThanKhi
+ * @author      Vadu
+ * @copyright   Copyright © 2020 DTech.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Integration\Api\AdminTokenServiceInterface">
+        <plugin name="vadu_custom_result_response"
+                type="Vadu\ThanKhi\Plugins\AdminTokenServiceInterface"
+                sortOrder="10" />
+    </type>
+</config>
